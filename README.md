@@ -1,5 +1,5 @@
 # minimalist-collapse
-It's a easy collapse plugin with beautiful style inspired on Google Inbox.
+It's an easy collapse plugin with beautiful style inspired on Google Inbox.
 
 <h2>Demo</h2>
 <p><a href="http://cosmefae.com/opensource/minimalist-collapse">See this <strong>demo</strong>.</a></p>
