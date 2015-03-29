@@ -1,3 +1,8 @@
+/*!
+ * Minimalist Collapse v1.0 (https://github.com/cosmefae/minimalist-collapse/)
+ * Copyright 2015 @ Cosme Faé (cosmefae.com)
+ * Licensed under MIT
+ */
 (function($) {
   $.fn.mcollapse = function(options) {
         var delayDuration = 0;
