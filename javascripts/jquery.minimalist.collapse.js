@@ -1,7 +1,7 @@
 /*!
- * Minimalist Collapse v1.0 (https://github.com/cosmefae/minimalist-collapse/)
+ * jQuery Minimalist Collapse v1.0 (https://github.com/cosmefae/jquery-minimalist-collapse/)
  * Copyright 2015 @ Cosme Faé (cosmefae.com)
- * Licensed under MIT
+ * Licensed under MIT 
  */
 (function($) {
   $.fn.mcollapse = function(options) {
@@ -16,11 +16,11 @@
         }, options );
 
         switch (settings.delay) {
-            case "runner":
+            case "faster":
                 delayDuration = 100;
                 break;
 
-            case "faster":
+            case "medium":
                 delayDuration = 200;
                 break;
 
@@ -28,18 +28,14 @@
                 delayDuration = 300;
                 break;
 
-            case "slowly":
-                delayDuration = 400;
-                break;
-
             default:
-                delayDuration = 200;
+                delayDuration = 300;
         }
 
-      if(settings.shadowEffect == true) {
+      if(settings.shadowEffect === true) {
           this.find('.m-result').addClass('shadow-effect');
       }
-      if(settings.contentFocus == true) {
+      if(settings.contentFocus === true) {
           this.find('.m-result').addClass('content-focus');
       }
 
