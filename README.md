@@ -1,11 +1,11 @@
-# minimalist-collapse
+# jquery-minimalist-collapse
 It's an easy collapse plugin with beautiful style inspired on Google Inbox.
 
 <h2>Demo</h2>
 <p><a href="http://cosmefae.com/opensource/minimalist-collapse">See this <strong>demo</strong>.</a></p>
 
 <h2>Plugin requirements</h2>
-<p>The simplist Minimalist Collapse plugin needs jQuery library to work. So, if you don't call on footer in your common page just get here (<a href="http://code.jquery.com/jquery-latest.min.js">http://code.jquery.com/jquery-latest.min.js</a>).</p>
+<p>The simplist jQuery Minimalist Collapse plugin needs jQuery library to work. So, if you don't call on footer in your common page just get here (<a href="http://code.jquery.com/jquery-latest.min.js">http://code.jquery.com/jquery-latest.min.js</a>).</p>
 
 <h2>About classes and attributes</h2>
 <p>We just need add some classes and attributes in your HTML structure to work.</p>
@@ -28,7 +28,7 @@ It's an easy collapse plugin with beautiful style inspired on Google Inbox.
 <h2>Installing</h2>
 <p>Will be really easy to use.</p>
 
-<p>1. First of all: call the Minimalist Collapse plugin after your jQuery called.</p>
+<p>1. First of all: call the jQuery Minimalist Collapse plugin after your jQuery called.</p>
 <pre>&lt;script src=&quot;jquery.minimalist.collapse.js&quot;&gt;&lt;/script&gt;</pre>
 <p>2. Usage via JavaScript:</p>
 <pre>$('.minimalist-collapse').mcollapse();</pre>

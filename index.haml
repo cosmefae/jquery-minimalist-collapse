@@ -1,0 +1,97 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "UTF-8"}/
+    %title jQuery Minimalist Collapse Plugin
+
+    / Bootstrap
+    %link{:href => "http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css", :rel => "stylesheet"}/
+    
+    / jQuery Minimalist Collapse stylesheet
+    %link{:href => "stylesheets/style.css", :rel => "stylesheet"}/
+  
+  %body
+    %h1 # jquery-minimalist-collapse <small>v1</small>
+
+    %pre
+      :preserve
+        $('.minimalist-collapse').mcollapse({
+          shadowEffect: true,
+          contentFocus: true,
+          delay: 'walker'
+        });
+
+    %h2 Real FAQ Demonstration
+
+    .minimalist-collapse
+      %dl.m-result
+        %dt{"data-collapse" => "m-collapse", "data-target" => "#faq-1"} What do you get if you multiply six by nine?
+        %dd#faq-1.m-collapse That's it. That's all there is.
+
+      %dl.m-result
+        %dt{"data-collapse" => "m-collapse", "data-target" => "#faq-2"} How many spheres are in the diagram?
+        %dd#faq-2.m-collapse Six rows of seven is 42.
+
+      %dl.m-result
+        %dt{"data-collapse" => "m-collapse", "data-target" => "#faq-3"} Why do galaxies' shapes differ?
+        %dd#faq-3.m-collapse Just very recently, astronomers have explained the diversity of galaxy shapes seen in the universe.
+
+      %dl.m-result
+        %dt{"data-collapse" => "m-collapse", "data-target" => "#faq-4"} Why do stars rarely collide during galactic collisions?
+        %dd#faq-4.m-collapse Because galactic collisions are not like the mechanic impact that we associate with, for example, a car collision, they are rather gravitational interactions.
+
+
+    %h2
+      Demonstration #1
+      %small Using definition list
+
+    .minimalist-collapse
+      %dl.m-result
+        %dt{"data-collapse" => "m-collapse", "data-target" => "#content-1"} Title #1
+        %dd#content-1.m-collapse Content #1
+
+      %dl.m-result
+        %dt{"data-collapse" => "m-collapse", "data-target" => "#content-2"} Title #2
+        %dd#content-2.m-collapse Content #2
+
+      %dl.m-result
+        %dt{"data-collapse" => "m-collapse", "data-target" => "#content-3"} Title #3
+        %dd#content-3.m-collapse Content #3
+
+      %dl.m-result
+        %dt{"data-collapse" => "m-collapse", "data-target" => "#content-4"} Title #4
+        %dd#content-4.m-collapse Content #4
+    %h2
+      Demonstration #2
+      %small Using unordered list
+
+    %ul.minimalist-collapse
+      %li.m-result
+        %header
+          %h2{"data-collapse" => "m-collapse", "data-target" => "#content-5"} Title #5
+        #content-5.m-collapse Content #5
+
+      %li.m-result
+        %header
+          %h2{"data-collapse" => "m-collapse", "data-target" => "#content-6"} Title #6
+        #content-6.m-collapse Content #6
+
+      %li.m-result
+        %header
+          %h2{"data-collapse" => "m-collapse", "data-target" => "#content-7"} Title #7
+        #content-7.m-collapse Content #7
+
+      %li.m-result
+        %header
+          %h2{"data-collapse" => "m-collapse", "data-target" => "#content-8"} Title #8
+        #content-8.m-collapse Content #8
+
+
+    %script{:src => "http://code.jquery.com/jquery-1.11.2.min.js"}
+    %script{:src => "javascripts/jquery.minimalist.collapse.js"}
+    :javascript
+      $(document).ready(function() {
+
+        $('.minimalist-collapse').mcollapse();
+      
+      });
