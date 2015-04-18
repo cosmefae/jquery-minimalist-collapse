@@ -22,6 +22,30 @@ It's an easy collapse plugin with beautiful style inspired on Google Inbox.
     &lt;div <strong>id=&quot;faq-5&quot;</strong>&gt;42&lt;/div&gt;
 </pre>
 
+<pre>
+    &lt;div class='minimalist-collapse'&gt;
+      &lt;dl class='m-result'&gt;
+          &lt;dt data-collapse='m-collapse' data-target='#content-1'&gt;Title #1&lt;/dt&gt;
+          &lt;dd class='m-collapse' id='content-1'&gt;Content #1&lt;/dd&gt;
+        &lt;/dl&gt;
+
+        &lt;dl class='m-result'&gt;
+          &lt;dt data-collapse='m-collapse' data-target='#content-2'&gt;Title #2&lt;/dt&gt;
+          &lt;dd class='m-collapse' id='content-2'&gt;Content #2&lt;/dd&gt;
+        &lt;/dl&gt;
+
+        &lt;dl class='m-result'&gt;
+          &lt;dt data-collapse='m-collapse' data-target='#content-3'&gt;Title #3&lt;/dt&gt;
+          &lt;dd class='m-collapse' id='content-3'&gt;Content #3&lt;/dd&gt;
+        &lt;/dl&gt;
+
+        &lt;dl class='m-result'&gt;
+          &lt;dt data-collapse='m-collapse' data-target='#content-4'&gt;Title #4&lt;/dt&gt;
+          &lt;dd class='m-collapse' id='content-4'&gt;Content #4&lt;/dd&gt;
+        &lt;/dl&gt;
+      &lt;/div&gt;
+</pre>
+
 <h2>Installing</h2>
 <p>Will be really easy to use.</p>
 
