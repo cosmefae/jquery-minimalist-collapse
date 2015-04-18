@@ -17,42 +17,43 @@ It's an easy collapse plugin with beautiful style inspired on Google Inbox.
 <p>Be sure to match data-target value with the ID content where your content will appear.</p>
 <p>Exemple: if your content to appear has ID "faq-5" your trigger title needs value "faq-5" to data-target.</p>
 
-<pre>
-    &lt;div <strong>data-target=&quot;#faq-5&quot;</strong>&gt;What is the answer to life the universe and everything?&lt;/div&gt;<br />
-    &lt;div <strong>id=&quot;faq-5&quot;</strong>&gt;42&lt;/div&gt;
-</pre>
+```html
+  <div class='minimalist-collapse'>
+    <dl class='m-result'>
+      <dt data-collapse='m-collapse' data-target='#content-1'>Title #1</dt>
+      <dd class='m-collapse' id='content-1'>Content #1</dd>
+    </dl>
 
-<pre>
-    &lt;div class='minimalist-collapse'&gt;
-      &lt;dl class='m-result'&gt;
-          &lt;dt data-collapse='m-collapse' data-target='#content-1'&gt;Title #1&lt;/dt&gt;
-          &lt;dd class='m-collapse' id='content-1'&gt;Content #1&lt;/dd&gt;
-        &lt;/dl&gt;
+    <dl class='m-result'>
+      <dt data-collapse='m-collapse' data-target='#content-2'>Title #2</dt>
+      <dd class='m-collapse' id='content-2'>Content #2</dd>
+    </dl>
 
-        &lt;dl class='m-result'&gt;
-          &lt;dt data-collapse='m-collapse' data-target='#content-2'&gt;Title #2&lt;/dt&gt;
-          &lt;dd class='m-collapse' id='content-2'&gt;Content #2&lt;/dd&gt;
-        &lt;/dl&gt;
+    <dl class='m-result'>
+      <dt data-collapse='m-collapse' data-target='#content-3'>Title #3</dt>
+      <dd class='m-collapse' id='content-3'>Content #3</dd>
+    </dl>
 
-        &lt;dl class='m-result'&gt;
-          &lt;dt data-collapse='m-collapse' data-target='#content-3'&gt;Title #3&lt;/dt&gt;
-          &lt;dd class='m-collapse' id='content-3'&gt;Content #3&lt;/dd&gt;
-        &lt;/dl&gt;
-
-        &lt;dl class='m-result'&gt;
-          &lt;dt data-collapse='m-collapse' data-target='#content-4'&gt;Title #4&lt;/dt&gt;
-          &lt;dd class='m-collapse' id='content-4'&gt;Content #4&lt;/dd&gt;
-        &lt;/dl&gt;
-      &lt;/div&gt;
-</pre>
+    <dl class='m-result'>
+      <dt data-collapse='m-collapse' data-target='#content-4'>Title #4</dt>
+      <dd class='m-collapse' id='content-4'>Content #4</dd>
+    </dl>
+  </div>
+```
 
 <h2>Installing</h2>
 <p>Will be really easy to use.</p>
 
 <p>1. First of all: call the jQuery Minimalist Collapse plugin after your jQuery called.</p>
-<pre>&lt;script src=&quot;jquery.minimalist.collapse.js&quot;&gt;&lt;/script&gt;</pre>
+
+```html
+<script src="jquery.minimalist.collapse.js"></script>
+```
+
 <p>2. Usage via JavaScript:</p>
-<pre>$('.minimalist-collapse').mcollapse();</pre>
+```javascript
+$('.minimalist-collapse').mcollapse();
+```
 
 <h2>Options</h2>
 <p>Options can be passed via JavaScript. It's easy and fun, I promess:</p>
@@ -87,9 +88,10 @@ It's an easy collapse plugin with beautiful style inspired on Google Inbox.
     </tbody>
 </table>
 
-<pre>
+```javascript
 $('.minimalist-collapse').mcollapse({
     shadowEffect: true,
     contentFocus: true,
     delay: 'walker'
-});</pre>
+});
+```
